@@ -1,0 +1,14 @@
+# build output
+build/
+sim/build/
+firmware/build/
+firmware/managed_components/
+firmware/sdkconfig
+firmware/sdkconfig.old
+*.ppm
+
+# secrets: never commit these
+secrets.h
+*.pem
+*.key
+.env
