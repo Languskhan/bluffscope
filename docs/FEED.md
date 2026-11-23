@@ -47,5 +47,5 @@ Compact JSON. Every message carries:
    from the alerts list).
 3. The display publishes `{"send_alert": "<id>"}` to its own cmd topic.
 4. The plugin checks: known alert, not already sent, rate limit OK, then sends it once
-   (or, if openHop can't originate channel messages, tells the display to send it with its own radio).
+   through its openHop Companion identity on `#alerts`.
 5. Everyone's popup marks it *Sent*.

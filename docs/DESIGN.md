@@ -38,8 +38,23 @@
 The plugin does all the outside fetching, so displays never call outside services themselves.
 That keeps device code small, saves power, and shrinks what an attacker can reach.
 
-Open question: check whether openHop's plugin interface can originate channel messages. If not,
-*Send to #alerts* is sent by the display's own SX1262 (CrowPanel, Heltec) instead of the Pi.
+### How it attaches to openHop
+
+openHop plugins are separate programs, not code loaded into the repeater
+(see openHop's `docs/plugins.md`). Hoptics ships as a Python wheel with an
+`openhop-plugin.json` manifest declaring both a `runtime` (the service) and a
+`ui` (the web dashboard, served by openHop at `/plugins/<id>/`). openHop's
+plugin manager installs it into its own virtualenv, starts it on boot,
+restarts it if it crashes, and gives it `$OPENHOP_PLUGIN_DATA` for its
+`config.json` and history database.
+
+Hoptics reads the mesh through openHop's existing interfaces (REST and live
+streams) and sends `#alerts` messages through a Companion frame server identity
+configured in openHop, the same way the MeshCore app talks to a radio.
+
+openHop API tokens are administrator-equivalent. Only the Hoptics service holds
+one, stored in its data folder. Displays never receive it; they get Hoptics' own
+read-only feed instead.
 
 ## Alerts
 
