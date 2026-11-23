@@ -43,9 +43,12 @@ earlier map layout until that screen is built.
 | --- | --- |
 | Elecrow CrowPanel Advanced 10.1" (ESP32-P4 + SX1262) | Full dashboard + mesh node |
 | Cardputer Zero over HDMI | Full dashboard (web page from the plugin) |
+| LilyGo T-Deck Plus and T-Deck | Field handheld + mesh node |
 | Heltec V4 and V4-R8 v2 expansion kits | Compact multi-page + mesh node |
 | M5Stack Cardputer, Cardputer Zero's own screen | Lite pages |
-| L2 Pro (when it arrives) | Lite, depends on its hardware |
+| Heltec V3 | Ticker (optional) |
+
+nRF52 boards without Wi-Fi keep normal MeshCore firmware and still receive `#alerts`.
 
 Details, tiers and candidate devices: [`docs/DEVICES.md`](docs/DEVICES.md).
 How devices get their data: [`docs/FEED.md`](docs/FEED.md).
