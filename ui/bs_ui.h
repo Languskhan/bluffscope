@@ -1,5 +1,5 @@
 /*
- * Bluffscope Mesh Analyzer - user interface (LVGL 9)
+ * Hoptics - user interface (LVGL 9)
  *
  * The same code runs on the CrowPanel 10.1" and in the PC simulator.
  * Screen: 1024 x 600 landscape.

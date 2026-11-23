@@ -1,4 +1,4 @@
-/* Bluffscope simulator - fake SMF-style traffic. SPDX-License-Identifier: MIT */
+/* Hoptics simulator - fake SMF-style traffic. SPDX-License-Identifier: MIT */
 #ifndef FAKE_MESH_H
 #define FAKE_MESH_H
 #include <stdint.h>

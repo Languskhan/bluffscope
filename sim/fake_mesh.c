@@ -1,5 +1,5 @@
 /*
- * Bluffscope simulator - fake SMF-style traffic
+ * Hoptics simulator - fake SMF-style traffic
  *
  * Every node here is invented ("DEMO ...") so screenshots never show
  * real repeaters or real owners. Positions are only roughly spread over
@@ -16,7 +16,7 @@
 typedef struct { const char *name; uint16_t prefix; double lat, lon; bool loc; } demo_node_t;
 
 static const demo_node_t k_nodes[] = {
-    { "BLUFFSCOPE (you)",   0xB1F5, 38.64, -121.27, true  },
+    { "HOPTICS (you)",   0xB1F5, 38.64, -121.27, true  },
     { "DEMO North Ridge",   0x1A2C, 38.92, -121.08, true  },
     { "DEMO Foothill Peak", 0x2B7E, 38.75, -120.86, true  },
     { "DEMO Valley Tower",  0x3C01, 38.58, -121.49, true  },

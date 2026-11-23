@@ -1,8 +1,8 @@
 /*
- * Bluffscope PC simulator
+ * Hoptics PC simulator
  *
- *   ./bluffscope_sim                 open a 1024x600 window (needs SDL2)
- *   ./bluffscope_sim --shots <dir>   render screenshots without a window
+ *   ./hoptics_sim                 open a 1024x600 window (needs SDL2)
+ *   ./hoptics_sim --shots <dir>   render screenshots without a window
  *
  * SPDX-License-Identifier: MIT
  */

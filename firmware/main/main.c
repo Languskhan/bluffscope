@@ -1,5 +1,5 @@
 /*
- * Bluffscope Mesh Analyzer - CrowPanel Advanced 10.1" (ESP32-P4) firmware
+ * Hoptics - CrowPanel Advanced 10.1" (ESP32-P4) firmware
  *
  * PHASE 2 SKELETON. This file shows where each piece will plug in; it is
  * not expected to build until the board arrives and the display, touch and
@@ -16,11 +16,11 @@
 #include "bs_model.h"
 #include "bs_ui.h"
 
-static const char *TAG = "bluffscope";
+static const char *TAG = "hoptics";
 
 void app_main(void)
 {
-    ESP_LOGI(TAG, "Bluffscope starting");
+    ESP_LOGI(TAG, "Hoptics starting");
 
     /* Phase 2: bring-up
      *  - board_display_init(): MIPI-DSI panel, backlight

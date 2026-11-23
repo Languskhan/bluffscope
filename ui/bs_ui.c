@@ -1,5 +1,5 @@
 /*
- * Bluffscope Mesh Analyzer - user interface (LVGL 9)
+ * Hoptics - user interface (LVGL 9)
  *
  * Layout (1024 x 600):
  *   +------+---------------------------+-------------+
@@ -461,7 +461,7 @@ static void refresh_panel(void)
                  "rebroadcasts, 7 days observed.\n"
                  "Confidence: medium.\n\n"
                  "The owner applies it.\n"
-                 "Bluffscope never changes a repeater.");
+                 "Hoptics never changes a repeater.");
     } else {
         lv_label_set_text(s_section, "Advisor");
         lv_obj_set_style_text_color(s_section, C_TEXT, 0);
@@ -580,7 +580,7 @@ void bs_ui_create(void)
     lv_obj_add_event_cb(s_map, map_click_cb, LV_EVENT_CLICKED, NULL);
 
     lv_obj_t *brand = lv_label_create(s_map);
-    lv_label_set_text(brand, "BLUFFSCOPE");
+    lv_label_set_text(brand, "HOPTICS");
     lv_obj_set_style_text_font(brand, &lv_font_montserrat_16, 0);
     lv_obj_set_style_text_color(brand, C_TEXT, 0);
     lv_obj_set_style_text_letter_space(brand, 3, 0);
@@ -656,7 +656,7 @@ void bs_ui_create(void)
     lv_obj_add_event_cb(s_sonar, sonar_draw_cb, LV_EVENT_DRAW_MAIN, NULL);
     lv_obj_add_event_cb(s_sonar, sonar_click_cb, LV_EVENT_CLICKED, NULL);
     lv_obj_t *st = lv_label_create(s_sonar);
-    lv_label_set_text(st, "BLUFFSCOPE  SONAR");
+    lv_label_set_text(st, "HOPTICS  SONAR");
     lv_obj_set_style_text_font(st, &lv_font_montserrat_16, 0);
     lv_obj_set_style_text_color(st, C_ACCENT, 0);
     lv_obj_set_style_text_letter_space(st, 3, 0);

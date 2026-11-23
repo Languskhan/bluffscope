@@ -12,7 +12,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-/* SMF radio preset. Fixed by design: Bluffscope is SMF-only. */
+/* SMF radio preset. Fixed by design: Hoptics is SMF-only. */
 #define BS_LORA_FREQ_MHZ   909.875f
 #define BS_LORA_BW_KHZ     62.5f
 #define BS_LORA_SF         9

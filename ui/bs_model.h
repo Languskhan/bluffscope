@@ -1,5 +1,5 @@
 /*
- * Bluffscope Mesh Analyzer - shared data model
+ * Hoptics - shared data model
  *
  * Everything the screens draw comes from here. On the real board the
  * MeshCore radio code fills it; in the PC simulator, sim/fake_mesh.c does.
@@ -42,7 +42,7 @@ typedef struct {
     uint16_t prefix;        /* 2-byte path hash, as SMF uses */
     bool     has_location;
     double   lat, lon;
-    bool     is_self;       /* this Bluffscope node */
+    bool     is_self;       /* this Hoptics node */
     bs_health_t health;
     uint8_t  hops;          /* hops from us (1 = heard directly) */
     float    snr_db;        /* last direct SNR, if heard directly */

@@ -1,5 +1,5 @@
 /*
- * Bluffscope Mesh Analyzer - shared data model
+ * Hoptics - shared data model
  * SPDX-License-Identifier: MIT
  */
 #include "bs_model.h"
